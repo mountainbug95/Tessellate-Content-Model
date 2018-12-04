@@ -39,7 +39,7 @@ sections:
           ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
           accumsan vivamus.
     component: features.html
-    template: features
+    type: features
   - title: Euismod sed feugiat lorem tempus magna
     subtitle: >-
       Gravida dis placerat lectus ante vel nunc euismod eget ornare varius
@@ -66,13 +66,14 @@ sections:
       tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus
       ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan
       vivamus augue cubilia vivamus nisi eu eget ornare varius gravida euismod. 
-      Gravida dis lorem ipsum dolor placerat magna tempus feugiat.  
+      Gravida dis lorem ipsum dolor placerat magna tempus feugiat.
+
 
       Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
       accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida
       dolore euismod lorem ipsum dolor.
     component: spotlight.html
-    template: spotlight
+    type: spotlight
   - title: Ornare varius lorem ipsum ante lectus
     subtitle: >-
       Gravida dis placerat lectus ante vel nunc euismod eget ornare varius
@@ -89,14 +90,16 @@ sections:
       is_scrolly: true
     columns:
       - col: >-
-          ### Diam vivamus turpis lorem sodales lectus ornare  
+          ### Diam vivamus turpis lorem sodales lectus ornare
+
 
           Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
           Diam tempor dui lacinia eget ornare varius gravida. Gravida dis
           placerat lectus ante vel nunc euismod est turpis sodales. Diam tempor
           dui lacinia accumsan vivamus augue cubilia vivamus nisi eu eget ornare
           varius gravida euismod.  Gravida dis lorem ipsum dolor placerat magna
-          tempus feugiat.  
+          tempus feugiat.
+
 
           Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
           lacinia accumsan vivamus augue cubilia vivamus nisi eu eget ornare
@@ -109,13 +112,15 @@ sections:
           placerat lectus ante vel nunc euismod est turpis sodales. Diam tempor
           dui lacinia accumsan vivamus augue cubilia vivamus nisi eu eget ornare
           varius gravida euismod.  Gravida dis lorem ipsum dolor placerat magna
-          tempus feugiat.  
+          tempus feugiat.
+
 
           Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
           lacinia accumsan vivamus augue cubilia vivamus nisi eu eget ornare
           varius gravida dolore euismod lorem ipsum dolor sit amet consequat.
           vivamus nisi eu eget ornare varius gravida dolore euismod lorem ipsum
-          dolor sit amet consequat. vivamus nisi eu eget ornare et magna.  
+          dolor sit amet consequat. vivamus nisi eu eget ornare et magna.
+
 
           Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
           lacinia accumsan vivamus augue cubilia.
@@ -126,19 +131,20 @@ sections:
           accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius
           gravida euismod.  Gravida dis lorem ipsum dolor placerat magna tempus
           feugiat. Lectus ante vel nunc euismod est turpis sodales. Diam tempor
-          dui lacinia dolore.  
+          dui lacinia dolore.
+
 
           Accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius
           gravida dolore euismod lorem ipsum dolor sit amet conseismod lorem
           ipsum dolor sit amet consequat lorem ipsum consequat feugiat sed
           tempus euismod feugiat veroeros.
     component: about.html
-    template: about
+    type: about
   - title: A Whole Lotta Elements
     subtitle: >-
       General purpose elements for every general purpose. Or something like
       that.
     component: elements.html
-    template: elements
+    type: elements
 layout: home
 ---
