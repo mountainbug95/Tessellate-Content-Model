@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+    {% include header.html %}
+    
+    {{ content }}
+
+    {% if site.contact.enabled %}
+        {% include contact.html %}
+    {% endif %}
+    
+    {% include footer.html %}

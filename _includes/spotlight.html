@@ -1,0 +1,24 @@
+<!-- Second -->
+<section id="{{ include.section_page.section_id }}" class="main">
+    {% include section_header.html %}
+    <div class="content dark style2">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12-narrow">
+                    <section>
+                        <h3>{{ include.section_page.subsection_title }}</h3>
+                        {{ include.section_page.content | markdownify }}
+                        {% include button.html %}
+                    </section>
+                </div>
+                <div class="col-8 col-12-narrow">
+                    <div class="row">
+                        {% for item in include.section_page.gallery %}
+                            <div class="col-6"><a href="#" class="image fit"><img src="{{ item.img_path | relative_url }}" alt="" /></a></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,70 @@
+---
+label: Features Section
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: textarea
+    name: subtitle
+    label: Section Subtitle
+    description: The text displayed below the section title
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: title
+    label: Section Title
+    description: The text displayed at the top of the section
+    default: Ligula ac cep eget libero elit semper
+    config:
+      required: true
+  - type: text
+    name: section_id
+    label: Section ID
+    default: first
+    config:
+      required: true
+  - type: field_group
+    name: button
+    fields:
+      - type: include
+        name: include_button
+        label: Button
+        template: button
+  - type: field_group_list
+    name: features
+    label: Features
+    description: A list of features to be displayed in the section
+    config:
+      labelField: title
+    fields:
+      - type: boolean
+        name: enable_icon
+        label: Display Icon
+        description: Displays the feature icon above the feature title
+        default: false
+      - type: text
+        name: icon
+        label: Feature Icon
+        description: Font Awesome icon
+      - type: text
+        name: title
+        label: Feature Title
+        description: The first line of text displayed in the feature content
+        config:
+          required: true
+      - type: textarea
+        name: blurb
+        label: Feature Text
+        description: The text displayed below the feature title
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+  - type: text
+    name: component
+    hidden: true
+    default: features.html
+    config:
+      required: true

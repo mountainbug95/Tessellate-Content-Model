@@ -1,0 +1,39 @@
+title: Tessellate
+baseurl: /
+header:
+  title: Welcome to Tessellate
+  subtitle: Non cras congue arcu aenean at Nullam
+  button:
+    display_button: true
+    text: Congue at aenean morbi
+    url: '#first'
+    is_scrolly: true
+contact:
+  enabled: true
+  title: Sed feugiat ipsum consequat
+  subtitle: >-
+    Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida
+    euismod lorem ipsum dolor sit amet consequat  
+
+    feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare
+    varius gravida euismod lorem ipsum dolor sit amet.
+  section_id: fourth
+footer:
+  social_links:
+    - title: Twitter
+      icon: fa-twitter
+      link_url: '#'
+    - title: Facebook
+      icon: fa-facebook
+      link_url: '#'
+    - title: Instagram
+      icon: fa-instagram
+      link_url: '#'
+    - title: Dribbble
+      icon: fa-dribbble
+      link_url: '#'
+    - title: GitHub
+      icon: fa-github
+      link_url: '#'
+  copyright: '&copy; Tessellate. All rights reserved.'
+permalink: '/posts/:slug:output_ext'

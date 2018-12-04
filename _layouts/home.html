@@ -1,0 +1,8 @@
+---
+layout: body
+---
+
+    {% for section_page in page.sections %}
+        
+        {% include {{ section_page.component }} section_page=section_page %}
+    {% endfor %}

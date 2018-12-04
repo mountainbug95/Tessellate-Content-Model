@@ -1,0 +1,12 @@
+<!-- Header -->
+<section id="header" class="dark">
+    <header>
+        <h1>{{ site.header.title }}</h1>
+        {{ site.header.subtitle | markdownify }}
+    </header>
+    {% if site.header.button.display_button %}
+        <footer>
+            <a href="{{ site.header.button.url }}" class="button{% if site.header.button.is_scrolly %} scrolly{% endif %}">{{ site.header.button.text }}</a>
+        </footer>
+    {% endif %}
+</section>

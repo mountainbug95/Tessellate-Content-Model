@@ -1,0 +1,5 @@
+{% if include.section_page.button.display_button %}
+    <footer>
+        <a href="{{ include.section_page.button.url }}" class="button{% if include.section_page.button.is_scrolly %} scrolly{% endif %}">{{ include.section_page.button.text }}</a>
+    </footer>
+{% endif %}

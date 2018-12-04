@@ -1,0 +1,60 @@
+---
+label: About Section
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: textarea
+    name: subtitle
+    label: Section Subtitle
+    description: The text displayed below the section title
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: title
+    label: Section Title
+    description: The text displayed at the top of the section
+    default: Ornare varius lorem ipsum ante lectus
+    config:
+      required: true
+  - type: text
+    name: section_id
+    label: Section ID
+    default: third
+    config:
+      required: true
+  - type: file
+    name: img_path
+    label: Section Content Image
+    description: The image displayed below the section subtitle
+  - type: field_group
+    name: button
+    fields:
+      - type: include
+        name: include_button
+        label: Button
+        template: button
+  - type: field_group_list
+    name: columns
+    label: Content Columns
+    description: A list of content columns
+    config:
+      labelField: col
+    fields:
+      - type: textarea
+        name: col
+        label: Column Content
+        description: The text displayed in the content column
+        config:
+          required: true
+          wysiwyg: true
+          schema:
+            format: markdown
+  - type: text
+    name: component
+    hidden: true
+    default: about.html
+    config:
+      required: true

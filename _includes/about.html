@@ -1,0 +1,22 @@
+<!-- Third -->
+<section id="{{ include.section_page.section_id }}" class="main">
+    {% assign section_header = include.section_page %}
+    {% include section_header.html %}
+    <div class="content dark style3">
+        <div class="container">
+            {% if include.section_page.img_path %}
+                <span class="image featured"><img src="{{ include.section_page.img_path | relative_url }}" alt="" /></span>
+            {% endif %}
+            <div class="row">
+                {% for column in include.section_page.columns %}
+                    <div class="col-4 col-12-narrow">
+                        {{ column.col | markdownify }}
+                        {% if forloop.last %}
+                            {% include button.html %}
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

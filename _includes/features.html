@@ -1,0 +1,28 @@
+<!-- First -->
+<section id="{{ include.section_page.section_id }}" class="main">
+    {% include section_header.html %}
+    <div class="content dark style1 featured">
+        <div class="container">
+            <div class="row">
+                
+                {% for item in include.section_page.features %}
+                    <div class="col-4 col-12-narrow">
+                        <section>
+                            {% if item.enable_icon %}
+                                <span class="feature-icon"><span class="icon {{ item.icon }}"></span></span>
+                            {% endif %}
+                            <header>
+                                <h3>{{ item.title }}</h3>
+                            </header>
+                            {{ item.blurb | markdownify }}
+                        </section>
+                    </div>
+                {% endfor %}
+                
+                <div class="col-12">
+                    {% include button.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
