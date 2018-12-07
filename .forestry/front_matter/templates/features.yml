@@ -32,36 +32,13 @@ fields:
         name: include_button
         label: Button
         template: button
-  - type: field_group_list
+  - type: blocks
     name: features
     label: Features
     description: A list of features to be displayed in the section
-    config:
-      labelField: title
-    fields:
-      - type: boolean
-        name: enable_icon
-        label: Display Icon
-        description: Displays the feature icon above the feature title
-        default: false
-      - type: text
-        name: icon
-        label: Feature Icon
-        description: Font Awesome icon
-      - type: text
-        name: title
-        label: Feature Title
-        description: The first line of text displayed in the feature content
-        config:
-          required: true
-      - type: textarea
-        name: blurb
-        label: Feature Text
-        description: The text displayed below the feature title
-        config:
-          wysiwyg: true
-          schema:
-            format: markdown
+    template_types:
+      - feature_item_icon
+      - feature_item_no_icon
   - type: text
     name: component
     hidden: true

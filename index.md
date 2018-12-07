@@ -14,24 +14,21 @@ sections:
       url: '#second'
       is_scrolly: true
     features:
-      - enable_icon: true
-        icon: fa-clock-o
+      - icon: fa-clock-o
         title: Gravida
         blurb: >-
           Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
           Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
           ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
           accumsan vivamus.
-      - enable_icon: true
-        icon: fa-bolt
+      - icon: fa-bolt
         title: Vivamus
         blurb: >-
           Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
           Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
           ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
           accumsan vivamus.
-      - enable_icon: true
-        icon: fa-cloud
+      - icon: fa-cloud
         title: Accumsan
         blurb: >-
           Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
@@ -39,7 +36,7 @@ sections:
           ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
           accumsan vivamus.
     component: features.html
-    type: features
+    template: features
   - title: Euismod sed feugiat lorem tempus magna
     subtitle: >-
       Gravida dis placerat lectus ante vel nunc euismod eget ornare varius
@@ -73,7 +70,7 @@ sections:
       accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida
       dolore euismod lorem ipsum dolor.
     component: spotlight.html
-    type: spotlight
+    template: spotlight
   - title: Ornare varius lorem ipsum ante lectus
     subtitle: >-
       Gravida dis placerat lectus ante vel nunc euismod eget ornare varius
@@ -139,12 +136,12 @@ sections:
           ipsum dolor sit amet consequat lorem ipsum consequat feugiat sed
           tempus euismod feugiat veroeros.
     component: about.html
-    type: about
+    template: about
   - title: A Whole Lotta Elements
     subtitle: >-
       General purpose elements for every general purpose. Or something like
       that.
     component: elements.html
-    type: elements
+    template: elements
 layout: home
 ---

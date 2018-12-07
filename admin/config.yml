@@ -181,30 +181,44 @@ collections:
                     required: false
                     label: Features
                     hint: A list of features to be displayed in the section
-                    fields:
-                      - name: enable_icon
-                        widget: boolean
-                        required: false
-                        label: Display Icon
-                        default: false
-                        hint: Displays the feature icon above the feature title
-                      - name: icon
-                        widget: string
-                        required: false
-                        label: Feature Icon
-                        hint: Font Awesome icon
-                      - name: title
-                        widget: string
-                        required: true
-                        label: Feature Title
-                        hint: >-
-                          The first line of text displayed in the feature
-                          content
-                      - name: blurb
-                        widget: markdown
-                        required: false
-                        label: Feature Text
-                        hint: The text displayed below the feature title
+                    types:
+                      - name: feature_item_icon
+                        widget: object
+                        label: Feature Item With Icon
+                        fields:
+                          - name: icon
+                            widget: string
+                            required: false
+                            label: Feature Icon
+                            hint: Font Awesome icon
+                          - name: title
+                            widget: string
+                            required: true
+                            label: Feature Title
+                            hint: >-
+                              The first line of text displayed in the feature
+                              content
+                          - name: blurb
+                            widget: markdown
+                            required: false
+                            label: Feature Text
+                            hint: The text displayed below the feature title
+                      - name: feature_item_no_icon
+                        widget: object
+                        label: Feature Item Without Icon
+                        fields:
+                          - name: title
+                            widget: string
+                            required: true
+                            label: Feature Title
+                            hint: >-
+                              The first line of text displayed in the feature
+                              content
+                          - name: blurb
+                            widget: markdown
+                            required: false
+                            label: Feature Text
+                            hint: The text displayed below the feature title
                   - name: component
                     widget: hidden
                     required: true

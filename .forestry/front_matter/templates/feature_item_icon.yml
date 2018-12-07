@@ -1,0 +1,22 @@
+---
+label: Feature Item With Icon
+is_partial: true
+fields:
+  - type: text
+    name: icon
+    label: Feature Icon
+    description: Font Awesome icon
+  - type: text
+    name: title
+    label: Feature Title
+    description: The first line of text displayed in the feature content
+    config:
+      required: true
+  - type: textarea
+    name: blurb
+    label: Feature Text
+    description: The text displayed below the feature title
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
