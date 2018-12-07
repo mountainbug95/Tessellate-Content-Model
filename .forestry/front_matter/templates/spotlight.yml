@@ -33,6 +33,7 @@ fields:
       section
   - type: field_group
     name: button
+    label: Section Action Button
     fields:
       - type: include
         name: include_button
