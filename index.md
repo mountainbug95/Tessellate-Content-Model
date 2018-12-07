@@ -39,7 +39,7 @@ sections:
           accumsan vivamus.
         type: feature_item_icon
     component: features.html
-    template: features
+    type: features
   - title: Euismod sed feugiat lorem tempus magna
     subtitle: >-
       Gravida dis placerat lectus ante vel nunc euismod eget ornare varius
@@ -73,7 +73,7 @@ sections:
       accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida
       dolore euismod lorem ipsum dolor.
     component: spotlight.html
-    template: spotlight
+    type: spotlight
   - title: Ornare varius lorem ipsum ante lectus
     subtitle: >-
       Gravida dis placerat lectus ante vel nunc euismod eget ornare varius
@@ -139,12 +139,12 @@ sections:
           ipsum dolor sit amet consequat lorem ipsum consequat feugiat sed
           tempus euismod feugiat veroeros.
     component: about.html
-    template: about
+    type: about
   - title: A Whole Lotta Elements
     subtitle: >-
       General purpose elements for every general purpose. Or something like
       that.
     component: elements.html
-    template: elements
+    type: elements
 layout: home
 ---
