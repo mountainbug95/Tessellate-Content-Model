@@ -152,6 +152,7 @@ collections:
                   - name: button
                     widget: object
                     required: false
+                    label: Section Action Button
                     fields:
                       - name: display_button
                         widget: boolean
@@ -222,6 +223,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: features.html
               - name: spotlight
                 widget: object
@@ -253,6 +255,7 @@ collections:
                   - name: button
                     widget: object
                     required: false
+                    label: Section Action Button
                     fields:
                       - name: display_button
                         widget: boolean
@@ -290,9 +293,11 @@ collections:
                   - name: content
                     widget: markdown
                     required: false
+                    label: Section Content
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: spotlight.html
               - name: about
                 widget: object
@@ -322,6 +327,7 @@ collections:
                   - name: button
                     widget: object
                     required: false
+                    label: Section Action Button
                     fields:
                       - name: display_button
                         widget: boolean
@@ -360,6 +366,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: about.html
               - name: elements
                 widget: object
@@ -379,4 +386,5 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: elements.html
