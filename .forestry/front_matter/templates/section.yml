@@ -20,6 +20,7 @@ fields:
         format: markdown
   - type: text
     name: component
-    label: Component
+    label: Section Component
+    hidden: true
     config:
       required: true

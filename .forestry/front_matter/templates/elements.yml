@@ -21,7 +21,8 @@ fields:
       required: true
   - type: text
     name: component
-    label: Component
+    label: Section Component
+    hidden: true
     default: elements.html
     config:
       required: true

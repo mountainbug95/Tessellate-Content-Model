@@ -52,13 +52,15 @@ fields:
           required: true
   - type: textarea
     name: content
+    label: Section Content
     config:
       wysiwyg: true
       schema:
         format: markdown
   - type: text
     name: component
-    label: Component
+    label: Section Component
+    hidden: true
     default: spotlight.html
     config:
       required: true

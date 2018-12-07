@@ -54,7 +54,8 @@ fields:
             format: markdown
   - type: text
     name: component
-    label: Component
+    label: Section Component
+    hidden: true
     default: about.html
     config:
       required: true

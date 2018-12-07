@@ -41,7 +41,8 @@ fields:
       - feature_item_no_icon
   - type: text
     name: component
-    label: Component
+    label: Section Component
+    hidden: true
     default: features.html
     config:
       required: true
